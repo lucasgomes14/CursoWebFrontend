@@ -36,3 +36,12 @@ a {
 	text-decoration: none;
 	font-variant: normal;
 }
+
+.destaque {
+	color: #00126d;
+	font-weight: bold;
+}
+
+#destaque {
+	color: orange;
+}
