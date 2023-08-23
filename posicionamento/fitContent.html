@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Fit content</title>
+
+	<style>
+		.container {
+			border: 2px solid black;
+			padding: 16px;
+			width: 300px;
+			margin-bottom: 16px;
+		}
+
+		.item {
+			background-color: blueviolet;
+			margin-bottom: 10px;
+			padding: 5px;
+		}
+
+		.fit-content .item {
+			width: fit-content;
+		}
+
+		.min-content .item {
+			width: min-content;
+		}
+
+		.max-content .item {
+			width: max-content;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container fit-content">
+		<div class="item">LOREN</div>
+		<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, reprehenderit.</div>
+		<div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis harum nulla necessitatibus accusantium dignissimos aspernatur beatae voluptas sapiente, error, magnam ducimus autem enim officiis voluptatem?</div>
+		<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, expedita nulla ut veritatis similique error natus fugiat, deserunt accusamus delectus nisi, unde necessitatibus non provident cum vitae. Aut possimus quidem similique eligendi repudiandae ad, accusantium facilis exercitationem, ratione numquam commodi, sed veritatis quis alias nesciunt molestias? Placeat vero voluptatibus velit suscipit, voluptate vel ipsam est eos dignissimos ducimus dicta aliquid nobis laudantium, ipsa fugiat iste explicabo vitae amet dolores, autem nesciunt ipsum. Ipsam, sed autem?</div>
+	</div>
+	<div class="container min-content">
+		<div class="item">LOREN</div>
+		<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, reprehenderit.</div>
+		<div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis harum nulla necessitatibus accusantium dignissimos aspernatur beatae voluptas sapiente, error, magnam ducimus autem enim officiis voluptatem?</div>
+		<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, expedita nulla ut veritatis similique error natus fugiat, deserunt accusamus delectus nisi, unde necessitatibus non provident cum vitae. Aut possimus quidem similique eligendi repudiandae ad, accusantium facilis exercitationem, ratione numquam commodi, sed veritatis quis alias nesciunt molestias? Placeat vero voluptatibus velit suscipit, voluptate vel ipsam est eos dignissimos ducimus dicta aliquid nobis laudantium, ipsa fugiat iste explicabo vitae amet dolores, autem nesciunt ipsum. Ipsam, sed autem?</div>
+	</div>
+	<div class="container max-content">
+		<div class="item">LOREN</div>
+		<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, reprehenderit.</div>
+		<div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis harum nulla necessitatibus accusantium dignissimos aspernatur beatae voluptas sapiente, error, magnam ducimus autem enim officiis voluptatem?</div>
+		<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, expedita nulla ut veritatis similique error natus fugiat, deserunt accusamus delectus nisi, unde necessitatibus non provident cum vitae. Aut possimus quidem similique eligendi repudiandae ad, accusantium facilis exercitationem, ratione numquam commodi, sed veritatis quis alias nesciunt molestias? Placeat vero voluptatibus velit suscipit, voluptate vel ipsam est eos dignissimos ducimus dicta aliquid nobis laudantium, ipsa fugiat iste explicabo vitae amet dolores, autem nesciunt ipsum. Ipsam, sed autem?</div>
+	</div>
+</body>
+</html>
