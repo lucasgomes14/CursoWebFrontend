@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucas Matheus Gomes de Lima">
+    <title>Flexbox</title>
+
+    <style>
+        .flexbox {
+            height: 250px;
+            border: 3px solid red;
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        .flexbox div {
+            border: 2px solid orange;
+            width: 150px;
+            margin: 15px;
+        }
+
+        .flex-container1 {
+            /* flex-wrap: wrap; /*quebra de linha: nowrap, wrap
+            flex-direction: row; /*direção: row, column, row-reverse, column-reverse*/
+            flex-flow: row wrap; /* atalho para wrap e direction */
+        }
+
+        .flex-container2 {
+            justify-content: space-evenly;
+            /* flex-start, flex-end, center, space-around, space-between, space-evenly */
+        }
+
+        .flex-container2 div {
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container3 {
+            justify-content: space-around;/* horizontal */
+            align-items: center;/* vertical */
+            /* flex-start, flex-end, center, space-around, space-between, space-evenly */
+        }
+
+        .flex-container3 div {
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container4 {
+            justify-content: space-around;/* horizontal */
+            align-items: baseline;/* vertical */
+            /* flex-start, flex-end, center, space-around, space-between, space-evenly */
+        }
+        
+        .flex-container4 div {
+            width: 30px;
+            margin: 0;
+        }
+        
+        .flex-container5 {
+            justify-content: center;/* horizontal */
+            /* align-items: flex-end;  vertical */
+
+            /* flex-start, flex-end, center, space-around, space-between, space-evenly */
+            /* space-around: divide o espaço por igual, mas com o começo e o fim com a metade do espaço*/
+            /* space-between: divide o espaço por igual, mas não coloca espaço no começo nem no fim*/
+            /* space-evenly: divide o espaço por igual em todos os lugares*/
+            
+            align-content: stretch;
+            flex-wrap: wrap;
+
+            /* aling-items: alinha quando tem apenas 1 linha, nowrap */
+            /* aling-content: alinha quando tem mais de uma linha, wrap */
+        }
+        
+        .flex-container5 div {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    
+    <div class="flexbox flex-container4" >
+        <div class="div1">1</div>
+        <div class="div2" style="font-size: 30px;">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    
+    <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+</html>

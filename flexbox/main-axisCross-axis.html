@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucas Matheus Gomes de Lima">
+    <title>main-axis e cross-axis</title>
+
+    <style>
+        .flexbox {
+            height: 250px;
+            border: 3px solid red;
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        .flexbox div {
+            border: 2px solid orange;
+            width: 150px;
+            margin: 15px;
+        }
+
+        .flex-container1 {
+            justify-content: flex-end;
+            align-items: flex-start;    
+            flex-direction: column;
+            height: 400px;
+        }
+
+        .flex-container1 div {
+            background-color: yellow;
+            width: 50px;
+            height: 20px;
+        }
+
+
+        /* row: main horizontal, direita para esquerda, justify-content */
+        /* row: cross vertical */
+        /* column: main vertical, cima para baixo, align-content/itens */
+        /* column: cross horizontal */
+        /* row-reverse: main horizontal, esquerda para direita, justify-content */
+        /* row-reverse: cross vertical */
+        /* column-reverse: main vertical, baixo para cima, align-content/itens */
+        /* column-reverse: cross horizontal */
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+</html>
