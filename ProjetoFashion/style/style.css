@@ -1,0 +1,20 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: tahoma, arial, sans-serif;
+}
+
+#principal {
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.header-top {
+    height: 50px;
+    background-color: #162028;
+    position: relative;
+}
+
+.logotipo {
+    
+}
